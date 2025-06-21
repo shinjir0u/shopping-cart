@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-function Game({
+function GameDetail({
   id,
   name,
   description,
@@ -48,7 +48,7 @@ function Game({
   );
 }
 
-Game.propTypes = {
+GameDetail.propTypes = {
   id: PropTypes.string.required,
   name: PropTypes.string.required,
   description: PropTypes.string.required,
@@ -62,4 +62,4 @@ Game.propTypes = {
   website: PropTypes.string.required,
 };
 
-export default Game;
+export default GameDetail;

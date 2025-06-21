@@ -1,12 +1,13 @@
 import sampleGames from "../helperFiles/sampleGamesObject";
 import sampleGame from "../helperFiles/sampleGameObject";
 import "./App.css";
-import Game from "./components/Game/Game";
+import GameDetail from "./components/GameDetail/GameDetail";
 import gameHelper from "./components/Helpers/gameHelper";
 
 function App() {
+  console.log(sampleGames.results);
   const game = gameHelper(sampleGame, sampleGames.results, 2);
-  return <Game {...game} />;
+  return <GameDetail {...game} />;
 }
 
 export default App;

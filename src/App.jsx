@@ -1,7 +1,12 @@
+import sampleGames from "../helperFiles/sampleGamesObject";
+import sampleGame from "../helperFiles/sampleGameObject";
 import "./App.css";
+import Game from "./components/Game/Game";
+import gameHelper from "./components/Helpers/gameHelper";
 
 function App() {
-  return <p>This is my default App.</p>;
+  const game = gameHelper(sampleGame, sampleGames, 2);
+  return <Game {...game} />;
 }
 
 export default App;

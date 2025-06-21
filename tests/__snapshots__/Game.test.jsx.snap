@@ -1,0 +1,236 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Game component exists in DOM > Game component renders with the correct data 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="game game__4200"
+      >
+        <h1
+          class="game__name"
+        >
+          Portal 2
+        </h1>
+        <p
+          class="game__description"
+        >
+          &lt;p&gt;Portal 2 is a first-person puzzle game developed by Valve Corporation and released on April 19, 2011 on Steam, PS3 and Xbox 360. It was published by Valve Corporation in digital form and by Electronic Arts in physical form. &lt;/p&gt;
+&lt;p&gt;Its plot directly follows the first game&#39;s, taking place in the Half-Life universe. You play as Chell, a test subject in a research facility formerly ran by the company Aperture Science, but taken over by an evil AI that turned upon its creators, GladOS. After defeating GladOS at the end of the first game but failing to escape the facility, Chell is woken up from a stasis chamber by an AI personality core, Wheatley, as the unkempt complex is falling apart. As the two attempt to navigate through the ruins and escape, they stumble upon GladOS, and accidentally re-activate her...&lt;/p&gt;
+&lt;p&gt;Portal 2&#39;s core mechanics are very similar to the first game&#39;s ; the player must make their way through several test chambers which involve puzzles. For this purpose, they possess a Portal Gun, a weapon capable of creating teleportation portals on white surfaces. This seemingly simple mechanic and its subtleties coupled with the many different puzzle elements that can appear in puzzles allows the game to be easy to start playing, yet still feature profound gameplay. The sequel adds several new puzzle elements, such as gel that can render surfaces bouncy or allow you to accelerate when running on them.&lt;/p&gt;
+&lt;p&gt;The game is often praised for its gameplay, its memorable dialogue and writing and its aesthetic. Both games in the series are responsible for inspiring most puzzle games succeeding them, particularly first-person puzzle games. The series, its characters and even its items such as the portal gun and the companion cube have become a cultural icon within gaming communities.&lt;/p&gt;
+&lt;p&gt;Portal 2 also features a co-op mode where two players take on the roles of robots being led through tests by GladOS, as well as an in-depth level editor.&lt;/p&gt;
+        </p>
+        <div
+          class="game__images"
+        >
+          <img
+            alt="game__image"
+            src="https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg"
+          />
+          <img
+            alt="game__image"
+            src="https://media.rawg.io/media/screenshots/221/221a03c11e5ff9f765d62f60d4b4cbf5.jpg"
+          />
+          <img
+            alt="game__image"
+            src="https://media.rawg.io/media/screenshots/173/1737ff43c14f40294011a209b1012875.jpg"
+          />
+          <img
+            alt="game__image"
+            src="https://media.rawg.io/media/screenshots/b11/b11a2ae0664f0e8a1ef2346f99df26e1.jpg"
+          />
+          <img
+            alt="game__image"
+            src="https://media.rawg.io/media/screenshots/9b1/9b107a790909b31918ebe2f40547cc85.jpg"
+          />
+          <img
+            alt="game__image"
+            src="https://media.rawg.io/media/screenshots/d05/d058fc7f7fa6128916c311eb14267fed.jpg"
+          />
+          <img
+            alt="game__image"
+            src="https://media.rawg.io/media/screenshots/415/41543dcc12dffc8e97d85a56ad42cda8.jpg"
+          />
+        </div>
+        <p
+          class="game__esrb-rating"
+        >
+          Everyone 10+
+        </p>
+        <p
+          class="game__developers"
+        >
+          Valve Software
+        </p>
+        <p
+          class="game__publishers"
+        >
+          Electronic Arts, 
+          Valve
+        </p>
+        <p
+          class="game__stores"
+        >
+          Xbox Store, 
+          Steam, 
+          PlayStation Store, 
+          Xbox 360 Store
+        </p>
+        <p
+          class="game__rating"
+        >
+          4.59 / 5
+        </p>
+        <a
+          class="game__website"
+          href="http://www.thinkwithportals.com/"
+          target="_blank"
+        >
+          Website
+        </a>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="game game__4200"
+    >
+      <h1
+        class="game__name"
+      >
+        Portal 2
+      </h1>
+      <p
+        class="game__description"
+      >
+        &lt;p&gt;Portal 2 is a first-person puzzle game developed by Valve Corporation and released on April 19, 2011 on Steam, PS3 and Xbox 360. It was published by Valve Corporation in digital form and by Electronic Arts in physical form. &lt;/p&gt;
+&lt;p&gt;Its plot directly follows the first game&#39;s, taking place in the Half-Life universe. You play as Chell, a test subject in a research facility formerly ran by the company Aperture Science, but taken over by an evil AI that turned upon its creators, GladOS. After defeating GladOS at the end of the first game but failing to escape the facility, Chell is woken up from a stasis chamber by an AI personality core, Wheatley, as the unkempt complex is falling apart. As the two attempt to navigate through the ruins and escape, they stumble upon GladOS, and accidentally re-activate her...&lt;/p&gt;
+&lt;p&gt;Portal 2&#39;s core mechanics are very similar to the first game&#39;s ; the player must make their way through several test chambers which involve puzzles. For this purpose, they possess a Portal Gun, a weapon capable of creating teleportation portals on white surfaces. This seemingly simple mechanic and its subtleties coupled with the many different puzzle elements that can appear in puzzles allows the game to be easy to start playing, yet still feature profound gameplay. The sequel adds several new puzzle elements, such as gel that can render surfaces bouncy or allow you to accelerate when running on them.&lt;/p&gt;
+&lt;p&gt;The game is often praised for its gameplay, its memorable dialogue and writing and its aesthetic. Both games in the series are responsible for inspiring most puzzle games succeeding them, particularly first-person puzzle games. The series, its characters and even its items such as the portal gun and the companion cube have become a cultural icon within gaming communities.&lt;/p&gt;
+&lt;p&gt;Portal 2 also features a co-op mode where two players take on the roles of robots being led through tests by GladOS, as well as an in-depth level editor.&lt;/p&gt;
+      </p>
+      <div
+        class="game__images"
+      >
+        <img
+          alt="game__image"
+          src="https://media.rawg.io/media/games/2ba/2bac0e87cf45e5b508f227d281c9252a.jpg"
+        />
+        <img
+          alt="game__image"
+          src="https://media.rawg.io/media/screenshots/221/221a03c11e5ff9f765d62f60d4b4cbf5.jpg"
+        />
+        <img
+          alt="game__image"
+          src="https://media.rawg.io/media/screenshots/173/1737ff43c14f40294011a209b1012875.jpg"
+        />
+        <img
+          alt="game__image"
+          src="https://media.rawg.io/media/screenshots/b11/b11a2ae0664f0e8a1ef2346f99df26e1.jpg"
+        />
+        <img
+          alt="game__image"
+          src="https://media.rawg.io/media/screenshots/9b1/9b107a790909b31918ebe2f40547cc85.jpg"
+        />
+        <img
+          alt="game__image"
+          src="https://media.rawg.io/media/screenshots/d05/d058fc7f7fa6128916c311eb14267fed.jpg"
+        />
+        <img
+          alt="game__image"
+          src="https://media.rawg.io/media/screenshots/415/41543dcc12dffc8e97d85a56ad42cda8.jpg"
+        />
+      </div>
+      <p
+        class="game__esrb-rating"
+      >
+        Everyone 10+
+      </p>
+      <p
+        class="game__developers"
+      >
+        Valve Software
+      </p>
+      <p
+        class="game__publishers"
+      >
+        Electronic Arts, 
+        Valve
+      </p>
+      <p
+        class="game__stores"
+      >
+        Xbox Store, 
+        Steam, 
+        PlayStation Store, 
+        Xbox 360 Store
+      </p>
+      <p
+        class="game__rating"
+      >
+        4.59 / 5
+      </p>
+      <a
+        class="game__website"
+        href="http://www.thinkwithportals.com/"
+        target="_blank"
+      >
+        Website
+      </a>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

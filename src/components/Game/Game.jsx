@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function Game({
   id,
   name,
@@ -45,5 +47,19 @@ function Game({
     </div>
   );
 }
+
+Game.propTypes = {
+  id: PropTypes.string.required,
+  name: PropTypes.string.required,
+  description: PropTypes.string.required,
+  images: PropTypes.string.required,
+  esrb_rating: PropTypes.string.required,
+  developers: PropTypes.arrayOf(PropTypes.string).required,
+  publishers: PropTypes.arrayOf(PropTypes.string).required,
+  rating: PropTypes.number.required,
+  rating_top: PropTypes.number.required,
+  stores: PropTypes.arrayOf(PropTypes.string).required,
+  website: PropTypes.string.required,
+};
 
 export default Game;

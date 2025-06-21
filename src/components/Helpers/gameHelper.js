@@ -3,7 +3,7 @@ function gameHelper(game, games, selectedIndex) {
     id: game.id,
     name: game.name,
     description: game.description,
-    images: games.results[selectedIndex].short_screenshots.map((image) => image.image),
+    images: games[selectedIndex].short_screenshots.map((image) => image.image),
     esrb_rating: game.esrb_rating.name,
     developers: game.developers.map((developer) => developer.name),
     publishers: game.publishers.map((publisher) => publisher.name),

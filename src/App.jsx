@@ -5,7 +5,7 @@ import Game from "./components/Game/Game";
 import gameHelper from "./components/Helpers/gameHelper";
 
 function App() {
-  const game = gameHelper(sampleGame, sampleGames, 2);
+  const game = gameHelper(sampleGame, sampleGames.results, 2);
   return <Game {...game} />;
 }
 

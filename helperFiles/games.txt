@@ -1,0 +1,20 @@
+For Games
+
+game images: object.results[index].short_screenshorts[index].image (all elements of short_screenshorts)
+game id: object.results[index].id
+game name: object.results[index].name
+
+For Game
+
+game id: object.id
+game description: object.description_raw
+game developers: object.developers[index].name (all elements in developers)
+game age restriction: object.esrb_rating.name
+game genre: object.genres[index].name (all elements in genres)
+game name: object.name
+game publishers: object.publishers[index].name (all elements in publishers)
+game rating: object.rating
+game max_rating: object.rating_top
+game website: object.website
+game stores: object.stores
+

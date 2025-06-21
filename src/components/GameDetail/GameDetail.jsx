@@ -42,25 +42,25 @@ function GameDetail({
         )}
       </p>
       <p className="game__rating">{rating + " / " + rating_top}</p>
-      <Link href={website} className="game__website" target="_blank">
+      <a href={website} className="game__website" target="_blank">
         Website
-      </Link>
+      </a>
     </div>
   );
 }
 
 GameDetail.propTypes = {
-  id: PropTypes.string.required,
-  name: PropTypes.string.required,
-  description: PropTypes.string.required,
-  images: PropTypes.string.required,
-  esrb_rating: PropTypes.string.required,
-  developers: PropTypes.arrayOf(PropTypes.string).required,
-  publishers: PropTypes.arrayOf(PropTypes.string).required,
-  rating: PropTypes.number.required,
-  rating_top: PropTypes.number.required,
-  stores: PropTypes.arrayOf(PropTypes.string).required,
-  website: PropTypes.string.required,
+  id: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  images: PropTypes.arrayOf(PropTypes.string).isRequired,
+  esrb_rating: PropTypes.string.isRequired,
+  developers: PropTypes.arrayOf(PropTypes.string).isRequired,
+  publishers: PropTypes.arrayOf(PropTypes.string).isRequired,
+  rating: PropTypes.number.isRequired,
+  rating_top: PropTypes.number.isRequired,
+  stores: PropTypes.arrayOf(PropTypes.string).isRequired,
+  website: PropTypes.string.isRequired,
 };
 
 export default GameDetail;

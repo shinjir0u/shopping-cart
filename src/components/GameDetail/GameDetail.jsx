@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 function GameDetail({
   id,
@@ -41,9 +42,9 @@ function GameDetail({
         )}
       </p>
       <p className="game__rating">{rating + " / " + rating_top}</p>
-      <a href={website} className="game__website" target="_blank">
+      <Link href={website} className="game__website" target="_blank">
         Website
-      </a>
+      </Link>
     </div>
   );
 }

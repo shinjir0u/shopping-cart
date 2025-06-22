@@ -1,12 +1,11 @@
 import PropTypes from "prop-types";
-import { Link, useOutletContext } from "react-router-dom";
+import { Link, useNavigate, useOutletContext } from "react-router-dom";
 import sampleGame from "../../../helperFiles/sampleGameObject";
 import gameHelper from "../Helpers/gameHelper";
 
 function GameDetail() {
   const { games, selectedIndex } = useOutletContext();
   const selectedGame = sampleGame;
-
   const game = gameHelper(selectedGame, games, selectedIndex);
 
   return (

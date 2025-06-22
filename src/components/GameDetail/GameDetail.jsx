@@ -1,48 +1,43 @@
 import PropTypes from "prop-types";
-import { Link } from "react-router-dom";
+import { Link, useOutletContext } from "react-router-dom";
+import sampleGame from "../../../helperFiles/sampleGameObject";
+import gameHelper from "../Helpers/gameHelper";
 
-function GameDetail({
-  id,
-  name,
-  description,
-  images,
-  esrb_rating,
-  developers,
-  publishers,
-  rating,
-  rating_top,
-  stores,
-  website,
-}) {
+function GameDetail() {
+  const { games, selectedIndex } = useOutletContext();
+  const selectedGame = sampleGame;
+
+  const game = gameHelper(selectedGame, games, selectedIndex);
+
   return (
-    <div className={"game game__" + id}>
-      <h1 className="game__name">{name}</h1>
-      <p className="game__description">{description}</p>
+    <div className={"game game__" + game.id}>
+      <h1 className="game__name">{game.name}</h1>
+      <p className="game__description">{game.description}</p>
       <div className="game__images">
-        {images.map((image, index) => (
+        {game.images.map((image, index) => (
           <img key={index} src={image} alt="game__image" />
         ))}
       </div>
-      <p className="game__esrb-rating">{esrb_rating}</p>
+      <p className="game__esrb-rating">{game.esrb_rating}</p>
       <p className="game__developers">
-        {developers.map(
+        {game.developers.map(
           (developer, index) =>
-            developer + (index === developers.length - 1 ? "" : ", ")
+            developer + (index === game.developers.length - 1 ? "" : ", ")
         )}
       </p>
       <p className="game__publishers">
-        {publishers.map(
+        {game.publishers.map(
           (publisher, index) =>
-            publisher + (index === publishers.length - 1 ? "" : ", ")
+            publisher + (index === game.publishers.length - 1 ? "" : ", ")
         )}
       </p>
       <p className="game__stores">
-        {stores.map(
-          (store, index) => store + (index === stores.length - 1 ? "" : ", ")
+        {game.stores.map(
+          (store, index) => store + (index === game.stores.length - 1 ? "" : ", ")
         )}
       </p>
-      <p className="game__rating">{rating + " / " + rating_top}</p>
-      <a href={website} className="game__website" target="_blank">
+      <p className="game__rating">{game.rating + " / " + game.rating_top}</p>
+      <a href={game.website} className="game__website" target="_blank">
         Website
       </a>
     </div>

@@ -1,4 +1,7 @@
-function Games({ games }) {
+import { useOutletContext } from "react-router-dom";
+
+function Games() {
+  const { games } = useOutletContext();
   return (
     <div className="games">
       {games.map((game) => (

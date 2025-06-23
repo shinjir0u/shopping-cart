@@ -1,14 +1,19 @@
 import { Outlet, useNavigate } from "react-router-dom";
+import Menu from "./components/Menu/Menu";
 import sampleGames from "../helperFiles/sampleGamesObject";
+import "./App.css";
 
 function App() {
   const games = sampleGames.results;
   const selectedIndex = 2;
-  return <div className="app">
-    <div className="container">
-      <Outlet context={{games, selectedIndex}} />
+  return (
+    <div className="app">
+      <div className="container">
+        <Menu />
+        <Outlet context={{ games, selectedIndex }} />
+      </div>
     </div>
-  </div>
+  );
 }
 
 export default App;

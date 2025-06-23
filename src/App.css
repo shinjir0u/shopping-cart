@@ -1,0 +1,16 @@
+:root {
+  --dark-background-color: rgb(26, 18, 11);
+  --brown-color: rgb(60, 42, 33);
+  --beige-color: rgb(213, 206, 163);
+  --white-color: rgb(229, 229, 203);
+}
+
+.app {
+  background-color: var(--brown-color);
+  min-height: 100vh;
+}
+
+.container {
+  width: min(80%, 1800px);
+  margin: 0 auto;
+}

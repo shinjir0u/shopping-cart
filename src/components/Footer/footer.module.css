@@ -1,0 +1,9 @@
+.footer {
+  background-color: var(--dark-background-color);
+  color: var(--beige-color);
+}
+
+.footer__text {
+    text-align: center;
+    font-weight: bold;
+}

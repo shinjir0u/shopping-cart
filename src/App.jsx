@@ -8,10 +8,8 @@ function App() {
   const selectedIndex = 2;
   return (
     <div className="app">
-      <div className="container">
-        <Menu />
-        <Outlet context={{ games, selectedIndex }} />
-      </div>
+      <Menu />
+      <Outlet context={{ games, selectedIndex }} />
     </div>
   );
 }

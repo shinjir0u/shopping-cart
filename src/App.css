@@ -6,11 +6,12 @@
 }
 
 .app {
-  background-color: var(--brown-color);
+  background-color: var(--beige-color);
   min-height: 100vh;
 }
 
 .container {
   width: min(80%, 1800px);
   margin: 0 auto;
+  padding: 1.5em 0;
 }

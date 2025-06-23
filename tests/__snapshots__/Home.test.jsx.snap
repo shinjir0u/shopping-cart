@@ -1,0 +1,192 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Home component exists > Home componenet renders correctly 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="_home_614f8e"
+      >
+        <section
+          class="_home__section_614f8e _home__section_style_one_614f8e"
+        >
+          <div
+            class="_home__section_content_614f8e container"
+          >
+            <div>
+              <h1>
+                Welcome To the Chilling Gamers
+              </h1>
+              <p>
+                This is a simulation of a game store website.
+              </p>
+            </div>
+            <img
+              alt="game background one"
+              src="/src/assets/images/game-background-one.jpg"
+            />
+          </div>
+        </section>
+        <section
+          class="_home__section_614f8e _home__section_style_two_614f8e"
+        >
+          <div
+            class="_home__section_content_614f8e container"
+          >
+            <div>
+              <h1>
+                Variety Of Games
+              </h1>
+              <p>
+                Get acess to as many games as you want.
+              </p>
+            </div>
+            <img
+              alt="game background two"
+              src="/src/assets/images/game-background-two.jpg"
+            />
+          </div>
+        </section>
+        <section
+          class="_home__section_614f8e _home__section_style_one_614f8e"
+        >
+          <div
+            class="_home__section_content_614f8e container"
+          >
+            <div>
+              <h1>
+                Gaming Gamers
+              </h1>
+              <p>
+                Join with us to enjoy unforgettable moments of your life.
+              </p>
+            </div>
+            <img
+              alt="game background three"
+              src="/src/assets/images/game-background-three.png"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="_home_614f8e"
+    >
+      <section
+        class="_home__section_614f8e _home__section_style_one_614f8e"
+      >
+        <div
+          class="_home__section_content_614f8e container"
+        >
+          <div>
+            <h1>
+              Welcome To the Chilling Gamers
+            </h1>
+            <p>
+              This is a simulation of a game store website.
+            </p>
+          </div>
+          <img
+            alt="game background one"
+            src="/src/assets/images/game-background-one.jpg"
+          />
+        </div>
+      </section>
+      <section
+        class="_home__section_614f8e _home__section_style_two_614f8e"
+      >
+        <div
+          class="_home__section_content_614f8e container"
+        >
+          <div>
+            <h1>
+              Variety Of Games
+            </h1>
+            <p>
+              Get acess to as many games as you want.
+            </p>
+          </div>
+          <img
+            alt="game background two"
+            src="/src/assets/images/game-background-two.jpg"
+          />
+        </div>
+      </section>
+      <section
+        class="_home__section_614f8e _home__section_style_one_614f8e"
+      >
+        <div
+          class="_home__section_content_614f8e container"
+        >
+          <div>
+            <h1>
+              Gaming Gamers
+            </h1>
+            <p>
+              Join with us to enjoy unforgettable moments of your life.
+            </p>
+          </div>
+          <img
+            alt="game background three"
+            src="/src/assets/images/game-background-three.png"
+          />
+        </div>
+      </section>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

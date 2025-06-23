@@ -1,0 +1,13 @@
+.home__section_style_one {
+  color: var(--dark-background-color);
+}
+
+.home__section_style_two {
+  background-color: var(--dark-background-color);
+  color: var(--white-color);
+}
+
+.home__section_content {
+    display: grid;
+    gap: 1em;
+}

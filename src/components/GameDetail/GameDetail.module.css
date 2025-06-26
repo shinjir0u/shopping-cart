@@ -1,0 +1,17 @@
+.game__content {
+    display: grid;
+    gap: 1.5em;
+}
+
+.game__name {
+    color: var(--dark-background-color);
+}
+
+.game__description {
+    overflow: scroll;
+    text-overflow: ellipsis;
+    max-height: 350px;
+    background-color: var(--brown-color);
+    padding: 1em;
+    color: var(--white-color);
+}

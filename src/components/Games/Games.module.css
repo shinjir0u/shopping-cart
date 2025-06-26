@@ -13,6 +13,7 @@
   display: grid;
   grid-template-rows: minmax(100px, 150px) 1fr;
   gap: 1em;
+  transition: transform 0.2s ease-out;
 }
 
 .game__card:hover {

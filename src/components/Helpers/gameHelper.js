@@ -2,7 +2,7 @@ function gameHelper(game, games, selectedIndex) {
   return {
     id: game.id,
     name: game.name,
-    description: game.description,
+    description: game.description_raw,
     images: games[selectedIndex].short_screenshots.map((image) => image.image),
     esrb_rating: game.esrb_rating.name,
     developers: game.developers.map((developer) => developer.name),

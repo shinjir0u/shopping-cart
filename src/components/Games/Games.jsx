@@ -1,5 +1,5 @@
 import { useNavigate, useOutletContext } from "react-router-dom";
-import style from "./games.module.css";
+import styles from "./Games.module.css";
 
 function Games() {
   const { games } = useOutletContext();
@@ -7,8 +7,8 @@ function Games() {
   const handleClick = (id) => navigate(`game/${id}`);
 
   return (
-    <div className={style.games}>
-      <div className={`${style.games__content} container`}>
+    <div className={styles.games}>
+      <div className={`${styles.games__content} container`}>
         {games.map((game) => (
           <Game key={game.id} onClick={() => handleClick(game.id)} game={game} />
         ))}
@@ -19,9 +19,9 @@ function Games() {
 
 function Game({ game, onClick }) {
   return (
-    <div className={style.game__card} onClick={onClick}>
-      <img className={style.game__image} src={game.background_image} alt={game.name} />
-      <div className={style.game__information}>
+    <div className={styles.game__card} onClick={onClick}>
+      <img className={styles.game__image} src={game.background_image} alt={game.name} />
+      <div className={styles.game__information}>
         <h2 className="game__name">{game.name}</h2>
         <p className="game__store">
           {game.stores.map(

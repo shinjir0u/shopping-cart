@@ -16,29 +16,51 @@ function GameDetail() {
         <h1 className={styles.game__name}>{game.name}</h1>
         <Carousel images={game.images} />
         <p className={styles.game__description}>{game.description}</p>
-        <p className="game__esrb-rating">{game.esrb_rating}</p>
-        <p className="game__developers">
-          {game.developers.map(
-            (developer, index) =>
-              developer + (index === game.developers.length - 1 ? "" : ", ")
-          )}
-        </p>
-        <p className="game__publishers">
-          {game.publishers.map(
-            (publisher, index) =>
-              publisher + (index === game.publishers.length - 1 ? "" : ", ")
-          )}
-        </p>
-        <p className="game__stores">
-          {game.stores.map(
-            (store, index) =>
-              store + (index === game.stores.length - 1 ? "" : ", ")
-          )}
-        </p>
-        <p className="game__rating">{game.rating + " / " + game.rating_top}</p>
-        <a href={game.website} className="game__website" target="_blank">
-          Website
-        </a>
+        <div className={styles.game__information}>
+          <div>
+            <p>ESRB Rating: </p>
+            <p className="game__esrb-rating">{game.esrb_rating}</p>
+          </div>
+          <div>
+            <p>Developers: </p>
+            <p className="game__developers">
+              {game.developers.map(
+                (developer, index) =>
+                  developer + (index === game.developers.length - 1 ? "" : ", ")
+              )}
+            </p>
+          </div>
+          <div>
+            <p>Publishers: </p>
+            <p className="game__publishers">
+              {game.publishers.map(
+                (publisher, index) =>
+                  publisher + (index === game.publishers.length - 1 ? "" : ", ")
+              )}
+            </p>
+          </div>
+          <div>
+            <p>Platforms: </p>
+            <div className={styles.game__platforms}>
+              {game.platforms.map(
+                (platform, index) =>
+                  <img className={styles.game__platform_logo} key={index} src={platform} alt="game platform" />
+              )}
+            </div>
+          </div>
+          <div>
+            <p>Rating: </p>
+            <p className="game__rating">
+              {game.rating + " / " + game.rating_top}
+            </p>
+          </div>
+          <div>
+            <p>Official Website: </p>
+            <a href={game.website} className="game__website" target="_blank">
+              {game.website}
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );

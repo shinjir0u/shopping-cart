@@ -6,3 +6,4 @@ This project is aimed to get used to the lessons learned: react router, css modu
 
 RAWG api - https://rawg.io/apidocs
 Favicon by - https://www.flaticon.com/authors/hilmy-abiyyu-a
+Platform Logos by - https://www.flaticon.com/

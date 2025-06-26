@@ -15,3 +15,26 @@
     padding: 1em;
     color: var(--white-color);
 }
+
+.game__information {
+    padding: 1em;
+    display: grid;
+    gap: 1em;
+}
+
+.game__information > div {
+    display: grid;
+}
+
+.game__information > div > *:last-child {
+    padding-left: 3em;
+}
+
+.game__platforms {
+    display: flex;
+    gap: 0.5em;
+}
+
+.game__platform_logo {
+    width: 1.5rem;
+}

@@ -1,9 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styles from "./Menu.module.css";
 import Icon from "@mdi/react";
 import { mdiCart } from "@mdi/js";
 
 function Menu({ cartItemsCount = 0 }) {
+  const navigate = useNavigate();
+
   return (
     <div className={styles.menu}>
       <div className={`${styles.menu__content} container`}>
@@ -26,7 +28,10 @@ function Menu({ cartItemsCount = 0 }) {
             </li>
           </ul>
         </nav>
-        <div className={styles.cart__container}>
+        <div
+          onClick={() => navigate("cart")}
+          className={styles.cart__container}
+        >
           <Icon
             className={styles.cart}
             path={mdiCart}

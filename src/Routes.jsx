@@ -2,6 +2,7 @@ import App from "./App";
 import Games from "./components/Games/Games";
 import GameDetail from "./components/GameDetail/GameDetail";
 import Home from "./components/Home/Home";
+import Cart from "./components/Cart/Cart";
 
 const routes = [
   {
@@ -14,6 +15,7 @@ const routes = [
         element: <Games />,
       },
       { path: "/games/game/:id", element: <GameDetail /> },
+      { path: "/cart", element: <Cart /> },
     ],
   },
 ];

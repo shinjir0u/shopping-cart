@@ -10,8 +10,7 @@ const logoMapper = {
 };
 
 function gameHelper(game, games, selectedIndex) {
-  console.log(games);
-
+  console.log(game);
   return {
     id: game.id,
     name: game.name,

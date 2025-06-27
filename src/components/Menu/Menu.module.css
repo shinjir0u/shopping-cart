@@ -43,6 +43,7 @@ a {
     margin-top: 1em;
     position: relative;
     display: flex;
+    cursor: pointer;
 }
 
 svg.cart {

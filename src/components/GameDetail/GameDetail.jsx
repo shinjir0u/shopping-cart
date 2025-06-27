@@ -7,7 +7,9 @@ import Carousel from "../Carousel/Carousel";
 
 function GameDetail() {
   const { games, selectedIndex } = useOutletContext();
-  const selectedGame = sampleGame;
+  const selectedGame = sampleGame.find(
+    (game) => game.id === games[selectedIndex].id
+  );
   const game = gameHelper(selectedGame, games, selectedIndex);
 
   return (
@@ -42,10 +44,14 @@ function GameDetail() {
           <div>
             <p>Platforms: </p>
             <div className={styles.game__platforms}>
-              {game.platforms.map(
-                (platform, index) =>
-                  <img className={styles.game__platform_logo} key={index} src={platform} alt="game platform" />
-              )}
+              {game.platforms.map((platform, index) => (
+                <img
+                  className={styles.game__platform_logo}
+                  key={index}
+                  src={platform}
+                  alt="game platform"
+                />
+              ))}
             </div>
           </div>
           <div>
@@ -61,6 +67,7 @@ function GameDetail() {
             </a>
           </div>
         </div>
+        <button className={styles.cart__button}>Add To Cart</button>
       </div>
     </div>
   );

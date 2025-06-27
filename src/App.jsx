@@ -42,7 +42,9 @@ function App() {
   return (
     <div className="app">
       <Menu cartItemsCount={cartItems.length} />
-      {games === null ? <p>Loading...</p> : <Outlet context={contextValue} />}
+      <main>
+        {games === null ? <p>Loading...</p> : <Outlet context={contextValue} />}
+      </main>
       <Footer />
     </div>
   );

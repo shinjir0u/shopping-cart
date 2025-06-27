@@ -7,6 +7,7 @@ const logoMapper = {
   mac: "/src/assets/icons/mac-logo.png",
   linux: "/src/assets/icons/linux-logo.png",
   nintendo: "/src/assets/icons/nintendo-logo.png",
+  web: "/src/assets/icons/web-logo.png",
 };
 
 function gameHelper(game, games, selectedIndex) {
@@ -31,4 +32,4 @@ function cartContainsItem(cart, itemToCheck) {
   return cart.some((item) => item.id === itemToCheck.id);
 }
 
-export {cartContainsItem, logoMapper, gameHelper as default};
+export { cartContainsItem, logoMapper, gameHelper as default };

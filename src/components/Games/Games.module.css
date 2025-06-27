@@ -11,7 +11,7 @@
   border-radius: 10px;
   cursor: pointer;
   display: grid;
-  grid-template-rows: minmax(100px, 150px) 1fr;
+  grid-template-rows: minmax(150px, 200px) 1fr;
   gap: 1em;
   transition: transform 0.2s ease-out;
 }
@@ -32,8 +32,10 @@
   background-color: var(--beige-color);
   border-radius: 5px;
   color: var(--dark-background-color);
-  display: grid;
+  display: flex;
   gap: 0.5em;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .game__platforms {
@@ -44,4 +46,16 @@
 .game__platform_logo {
   width: 1.5rem;
   fill: var(--white-color);
+}
+
+@media (min-width: 37.5em) {
+  .games__content {
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  }
+}
+
+@media (min-width: 68.75em) {
+  .games__content {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
 }

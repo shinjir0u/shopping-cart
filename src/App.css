@@ -8,12 +8,14 @@
 .app {
   background-color: var(--beige-color);
   min-height: 100vh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
+}
+
+main {
+  min-height: 500px;
 }
 
 .container {
-  width: min(90%, 1800px);
+  width: min(90%, 1400px);
   margin: 0 auto;
   padding: 1.5em 0;
 }

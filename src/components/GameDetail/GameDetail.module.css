@@ -10,11 +10,17 @@
 .game__description {
   overflow: scroll;
   text-overflow: ellipsis;
-  max-height: 350px;
+  max-height: 500px;
   background-color: var(--brown-color);
   padding: 1.25em 1em;
   border-radius: 5px;
   color: var(--white-color);
+}
+
+.game__info,
+.game {
+  display: grid;
+  gap: 1.5em 1em;
 }
 
 .game__information {
@@ -60,3 +66,10 @@
   font-weight: bold;
   background-color: var(--dark-background-color);
 }
+
+@media (min-width: 37.5em) {
+  .game__info {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+

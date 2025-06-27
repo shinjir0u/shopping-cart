@@ -12,6 +12,8 @@
 
 .image_container {
   position: relative;
+  display: grid;
+  justify-content: center;
 }
 
 .image {

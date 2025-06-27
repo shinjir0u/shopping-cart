@@ -8,7 +8,7 @@ function Cart() {
     games.findIndex((game) => game.id === gameItem.id);
 
   return (
-    <div className="container">
+    <div className={`container ${styles.items__container}`}>
       <div className={styles.items__content}>
         {cartItems.map((item) => (
           <CartItem
@@ -19,8 +19,8 @@ function Cart() {
             }}
           />
         ))}
-        <p className={styles.note}>Payment system is still in development.</p>
       </div>
+      <p className={styles.note}>Payment system is still in development.</p>
     </div>
   );
 }

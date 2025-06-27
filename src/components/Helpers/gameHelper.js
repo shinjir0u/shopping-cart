@@ -1,13 +1,13 @@
 const logoMapper = {
-  pc: "/src/assets/icons/pc-logo.png",
-  playstation: "/src/assets/icons/playstation-logo.png",
-  xbox: "/src/assets/icons/xbox-logo.png",
-  ios: "/src/assets/icons/ios-logo.png",
-  android: "/src/assets/icons/android-logo.png",
-  mac: "/src/assets/icons/mac-logo.png",
-  linux: "/src/assets/icons/linux-logo.png",
-  nintendo: "/src/assets/icons/nintendo-logo.png",
-  web: "/src/assets/icons/web-logo.png",
+  pc: "/assets/icons/pc-logo.png",
+  playstation: "/assets/icons/playstation-logo.png",
+  xbox: "/assets/icons/xbox-logo.png",
+  ios: "/assets/icons/ios-logo.png",
+  android: "/assets/icons/android-logo.png",
+  mac: "/assets/icons/mac-logo.png",
+  linux: "/assets/icons/linux-logo.png",
+  nintendo: "/assets/icons/nintendo-logo.png",
+  web: "/assets/icons/web-logo.png",
 };
 
 function gameHelper(game, games, selectedIndex) {

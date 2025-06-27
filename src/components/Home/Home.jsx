@@ -16,7 +16,7 @@ function Home() {
             </p>
           </div>
           <img
-            src="/src/assets/images/game-background-one.jpg"
+            src="/assets/images/game-background-one.jpg"
             alt="game background one"
           />
         </div>
@@ -26,7 +26,7 @@ function Home() {
       >
         <div className={`${styles.home__section_content} container`}>
           <img
-            src="/src/assets/images/game-background-two.jpg"
+            src="/assets/images/game-background-two.jpg"
             alt="game background two"
           />
           <div>
@@ -52,7 +52,7 @@ function Home() {
             </p>
           </div>
           <img
-            src="/src/assets/images/game-background-three.png"
+            src="/assets/images/game-background-three.png"
             alt="game background three"
           />
         </div>

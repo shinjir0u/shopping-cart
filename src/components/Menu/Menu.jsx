@@ -11,7 +11,7 @@ function Menu({ cartItemsCount = 0 }) {
       <div className={`${styles.menu__content} container`}>
         <div className={styles.app__logo_text}>
           <img
-            src="/src/assets/icons/logo.png"
+            src="/assets/icons/logo.png"
             alt="logo"
             className={styles.logo}
           />

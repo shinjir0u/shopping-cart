@@ -19,8 +19,8 @@ function Cart() {
             }}
           />
         ))}
+        <p className={styles.note}>Payment system is still in development.</p>
       </div>
-      <p className={styles.note}>Payment system is still in development.</p>
     </div>
   );
 }

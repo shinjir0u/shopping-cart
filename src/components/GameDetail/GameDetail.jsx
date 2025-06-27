@@ -1,18 +1,30 @@
 import PropTypes from "prop-types";
 import { Link, useOutletContext } from "react-router-dom";
-import sampleGame from "../../../helperFiles/sampleGameObject";
 import gameHelper, { cartContainsItem } from "../Helpers/gameHelper";
 import styles from "./GameDetail.module.css";
 import Carousel from "../Carousel/Carousel";
+import { useEffect, useState } from "react";
+import { fetchGame } from "../../GameAPI";
 
 function GameDetail() {
+  const [game, setGame] = useState(null);
+  const [includedInCart, setIncludedInCart] = useState(false);
   const { games, selectedIndex, cartItems, addToCart, removeFromCart } =
     useOutletContext();
-  const selectedGame = sampleGame.find(
-    (game) => game.id === games[selectedIndex].id
-  );
-  const game = gameHelper(selectedGame, games, selectedIndex);
-  const addToCartObject = cartContainsItem(cartItems, game)
+
+  useEffect(() => {
+    async function getGame() {
+      const selectedGame = await fetchGame(games[selectedIndex].id);
+      const game = gameHelper(selectedGame, games, selectedIndex);
+      setGame(game);
+      setIncludedInCart(cartContainsItem(cartItems, game));
+    }
+    getGame();
+  }, []);
+
+  if (game === null) return <p>Loading...</p>;
+
+  const addToCartObject = includedInCart
     ? { label: "Remove from Cart", callback: removeFromCart }
     : { label: "Add to Cart", callback: addToCart };
 
@@ -73,7 +85,10 @@ function GameDetail() {
         </div>
         <button
           className={styles.cart__button}
-          onClick={() => addToCartObject.callback(game)}
+          onClick={() => {
+            addToCartObject.callback(game);
+            setIncludedInCart((previousValue) => !previousValue);
+          }}
         >
           {addToCartObject.label}
         </button>

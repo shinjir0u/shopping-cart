@@ -26,7 +26,6 @@ function Games() {
 }
 
 function Game({ game, onClick }) {
-  console.log(game);
   return (
     <div className={styles.game__card} onClick={onClick}>
       <img

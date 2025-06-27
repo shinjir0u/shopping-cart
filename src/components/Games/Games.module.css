@@ -26,3 +26,22 @@
   object-fit: cover;
   border-radius: 10px;
 }
+
+.game__information {
+  padding: 0.5em 1em;
+  background-color: var(--beige-color);
+  border-radius: 5px;
+  color: var(--dark-background-color);
+  display: grid;
+  gap: 0.5em;
+}
+
+.game__platforms {
+  display: flex;
+  gap: 0.5em;
+}
+
+.game__platform_logo {
+  width: 1.5rem;
+  fill: var(--white-color);
+}

@@ -20,6 +20,7 @@ function Cart() {
           />
         ))}
       </div>
+      <p className={styles.note}>Payment system is still in development.</p>
     </div>
   );
 }

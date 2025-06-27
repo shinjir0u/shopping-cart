@@ -1,4 +1,5 @@
 import { useNavigate, useOutletContext } from "react-router-dom";
+import { logoMapper } from "../Helpers/gameHelper.js";
 import styles from "./Games.module.css";
 
 function Games() {
@@ -25,6 +26,7 @@ function Games() {
 }
 
 function Game({ game, onClick }) {
+  console.log(game);
   return (
     <div className={styles.game__card} onClick={onClick}>
       <img
@@ -34,12 +36,15 @@ function Game({ game, onClick }) {
       />
       <div className={styles.game__information}>
         <h2 className="game__name">{game.name}</h2>
-        <p className="game__store">
-          {game.stores.map(
-            (store, index) =>
-              store.store.name + (index === game.stores.length - 1 ? "" : ", ")
-          )}
-        </p>
+        <div className={styles.game__platforms}>
+          {game.parent_platforms.map((platform) => (
+            <img
+              className={styles.game__platform_logo}
+              src={logoMapper[platform.platform.slug]}
+              alt={`platform ${platform.platform.name}`}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -30,3 +30,9 @@
 .item__name {
     text-align: center;
 }
+
+.note {
+  font-weight: bold;
+  text-align: center;
+  font-size: large;
+}

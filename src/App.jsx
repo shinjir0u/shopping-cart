@@ -1,4 +1,4 @@
-import { Outlet, useNavigate } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Menu from "./components/Menu/Menu";
 import sampleGames from "../helperFiles/sampleGamesObject";
 import "./App.css";
@@ -10,10 +10,29 @@ function App() {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [cartItems, setCartItems] = useState([]);
 
+  const addToCart = (newItem) => {
+    setCartItems((previousItems) => [...previousItems, newItem]);
+  };
+
+  const removeFromCart = (itemToRemove) => {
+    setCartItems((previousItems) =>
+      previousItems.filter((item) => item.id !== itemToRemove.id)
+    );
+  };
+
   return (
     <div className="app">
-      <Menu />
-      <Outlet context={{ games, selectedIndex, setSelectedIndex, cartItems }} />
+      <Menu cartItemsCount={cartItems.length} />
+      <Outlet
+        context={{
+          games,
+          selectedIndex,
+          setSelectedIndex,
+          cartItems,
+          addToCart,
+          removeFromCart,
+        }}
+      />
       <Footer />
     </div>
   );

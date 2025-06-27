@@ -57,6 +57,6 @@
 }
 
 .cart__button:hover {
-    font-weight: bold;
-    background-color: var(--dark-background-color);
+  font-weight: bold;
+  background-color: var(--dark-background-color);
 }

@@ -10,7 +10,6 @@ const logoMapper = {
 };
 
 function gameHelper(game, games, selectedIndex) {
-  console.log(game);
   return {
     id: game.id,
     name: game.name,
@@ -28,4 +27,8 @@ function gameHelper(game, games, selectedIndex) {
   };
 }
 
-export default gameHelper;
+function cartContainsItem(cart, itemToCheck) {
+  return cart.some((item) => item.id === itemToCheck.id);
+}
+
+export {cartContainsItem, logoMapper, gameHelper as default};

@@ -1,19 +1,23 @@
 import PropTypes from "prop-types";
 import { Link, useOutletContext } from "react-router-dom";
 import sampleGame from "../../../helperFiles/sampleGameObject";
-import gameHelper from "../Helpers/gameHelper";
+import gameHelper, { cartContainsItem } from "../Helpers/gameHelper";
 import styles from "./GameDetail.module.css";
 import Carousel from "../Carousel/Carousel";
 
 function GameDetail() {
-  const { games, selectedIndex } = useOutletContext();
+  const { games, selectedIndex, cartItems, addToCart, removeFromCart } =
+    useOutletContext();
   const selectedGame = sampleGame.find(
     (game) => game.id === games[selectedIndex].id
   );
   const game = gameHelper(selectedGame, games, selectedIndex);
+  const addToCartObject = cartContainsItem(cartItems, game)
+    ? { label: "Remove from Cart", callback: removeFromCart }
+    : { label: "Add to Cart", callback: addToCart };
 
   return (
-    <div className={"game game__" + game.id}>
+    <div className={`game game__  ${game.id}`}>
       <div className={`${styles.game__content} container`}>
         <h1 className={styles.game__name}>{game.name}</h1>
         <Carousel images={game.images} />
@@ -67,7 +71,12 @@ function GameDetail() {
             </a>
           </div>
         </div>
-        <button className={styles.cart__button}>Add To Cart</button>
+        <button
+          className={styles.cart__button}
+          onClick={() => addToCartObject.callback(game)}
+        >
+          {addToCartObject.label}
+        </button>
       </div>
     </div>
   );
